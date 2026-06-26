@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0043)file:///C:/Users/PC/Downloads/index_16.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Каталог — Сияние изнутри</title>
 <style>
@@ -10,18 +11,50 @@
   a { text-decoration: none; color: inherit; }
   button { cursor: pointer; font-family: inherit; border: none; background: none; }
   ul { list-style: none; }
+
   :root {
-    --c-bg: #f9f8f6; --c-white: #ffffff; --c-text: #1a1a1a;
-    --c-muted: #8a8a8a; --c-accent: #c07a5a; --c-border: #e8e4df;
-    --c-btn: #8B5E3C; --c-btn-hover: #6b4a2e;
-    --f-brand: 'Georgia', 'Times New Roman', serif;
-    --f-body: 'Helvetica Neue', Arial, sans-serif;
-    --nav-h: 60px; --page-w: 1200px; --gap: 24px;
+    --c-bg:      #f9f8f6;
+    --c-white:   #ffffff;
+    --c-text:    #1a1a1a;
+    --c-muted:   #8a8a8a;
+    --c-accent:  #c07a5a;
+    --c-border:  #e8e4df;
+    --c-btn:     #8B5E3C;
+    --c-btn-hover: #6b4a2e;
+    --f-brand:   'Georgia', 'Times New Roman', serif;
+    --f-body:    'Helvetica Neue', Arial, sans-serif;
+    --nav-h:     60px;
+    --page-w:    1200px;
+    --gap:       24px;
   }
-  body { background: var(--c-bg); color: var(--c-text); font-family: var(--f-body); font-size: 14px; line-height: 1.5; }
-  .site-header { position: sticky; top: 0; z-index: 100; background: var(--c-white); border-bottom: 1px solid var(--c-border); height: var(--nav-h); display: flex; align-items: center; }
-  .nav-inner { width: 100%; max-width: var(--page-w); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; }
-  .nav-logo { font-family: var(--f-brand); font-size: 15px; font-style: italic; margin-right: auto; color: var(--c-text); line-height: 1.2; letter-spacing: 0.02em; }
+
+  body {
+    background: var(--c-bg);
+    color: var(--c-text);
+    font-family: var(--f-body);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--c-white);
+    border-bottom: 1px solid var(--c-border);
+    height: var(--nav-h);
+    display: flex; align-items: center;
+  }
+  .nav-inner {
+    width: 100%; max-width: var(--page-w);
+    margin: 0 auto; padding: 0 32px;
+    display: flex; align-items: center;
+  }
+  .nav-logo {
+    font-family: var(--f-brand); font-size: 15px;
+    font-style: italic; margin-right: auto;
+    color: var(--c-text); line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
   .nav-logo span { display: block; }
   .nav-links { display: flex; gap: 32px; align-items: center; }
   .nav-links a { font-size: 13px; color: var(--c-text); letter-spacing: 0.04em; transition: color .2s; }
@@ -31,63 +64,210 @@
   .nav-icons button:hover { color: var(--c-accent); }
   .nav-icons svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; }
   .hamburger { display: none; }
-  .catalog-header { max-width: var(--page-w); margin: 0 auto; padding: 32px 32px 0; text-align: center; }
-  .breadcrumb { font-size: 12px; color: var(--c-muted); margin-bottom: 16px; display: flex; gap: 6px; justify-content: center; align-items: center; }
+
+  /* ── CATALOG HEADER ── */
+  .catalog-header {
+    max-width: var(--page-w); margin: 0 auto;
+    padding: 32px 32px 0; text-align: center;
+  }
+  .breadcrumb {
+    font-size: 12px; color: var(--c-muted);
+    margin-bottom: 16px; display: flex;
+    gap: 6px; justify-content: center; align-items: center;
+  }
   .breadcrumb a { color: var(--c-muted); }
-  .catalog-title { font-family: var(--f-brand); font-size: clamp(36px, 5vw, 56px); font-weight: 400; letter-spacing: -0.01em; margin-bottom: 28px; }
-  .filters-wrap { max-width: var(--page-w); margin: 0 auto; padding: 0 32px 32px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .breadcrumb a:hover { color: var(--c-text); }
+  .catalog-title {
+    font-family: var(--f-brand);
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 400; letter-spacing: -0.01em;
+    margin-bottom: 28px;
+  }
+
+  /* ── FILTERS ── */
+  .filters-wrap {
+    max-width: var(--page-w); margin: 0 auto;
+    padding: 0 32px 32px;
+    display: flex; flex-direction: column;
+    align-items: center; gap: 12px;
+  }
   .filter-row { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; }
-  .filter-btn { font-size: 13px; color: var(--c-muted); padding: 6px 16px; border-radius: 20px; letter-spacing: 0.02em; transition: color .2s; border: 1px solid transparent; }
+  .filter-btn {
+    font-size: 13px; color: var(--c-muted);
+    padding: 6px 16px; border-radius: 20px;
+    letter-spacing: 0.02em;
+    transition: color .2s; border: 1px solid transparent;
+  }
   .filter-btn:hover { color: var(--c-text); }
   .filter-btn.active { color: var(--c-accent); }
   .filter-sub .filter-btn { font-size: 12px; }
-  .catalog-grid { max-width: var(--page-w); margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap); }
-  .card { background: var(--c-white); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; position: relative; transition: box-shadow .25s, transform .25s; }
-  .card:hover { box-shadow: 0 8px 32px rgba(0,0,0,.08); transform: translateY(-2px); }
-  .card-sale { position: absolute; top: 12px; left: 12px; font-size: 13px; color: var(--c-accent); font-weight: 600; letter-spacing: 0.04em; z-index: 2; }
-  .card-wish { position: absolute; top: 10px; right: 12px; z-index: 2; color: var(--c-muted); padding: 4px; transition: color .2s, transform .2s; }
-  .card-wish svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 1.5; transition: fill .2s, stroke .2s; }
+
+  /* ── GRID ── */
+  .catalog-grid {
+    max-width: var(--page-w); margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+  }
+
+  /* ── CARD ── */
+  .card {
+    background: var(--c-white);
+    border-radius: 4px; overflow: hidden;
+    display: flex; flex-direction: column;
+    position: relative;
+    transition: box-shadow .25s, transform .25s;
+  }
+  .card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,.08);
+    transform: translateY(-2px);
+  }
+
+  .card-sale {
+    position: absolute; top: 12px; left: 12px;
+    font-size: 13px; color: var(--c-accent);
+    font-weight: 600; letter-spacing: 0.04em; z-index: 2;
+  }
+
+  /* ── WISHLIST HEART ── */
+  .card-wish {
+    position: absolute; top: 10px; right: 12px;
+    z-index: 2; color: var(--c-muted);
+    padding: 4px; transition: color .2s, transform .2s;
+  }
+  .card-wish svg {
+    width: 17px; height: 17px;
+    stroke: currentColor; fill: none; stroke-width: 1.5;
+    transition: fill .2s, stroke .2s;
+  }
+  /* анимация при клике */
   .card-wish.liked { color: #8B5E3C; }
   .card-wish.liked svg { fill: #8B5E3C; stroke: #8B5E3C; }
   .card-wish.pop { animation: heartpop .35s ease; }
-  @keyframes heartpop { 0% { transform: scale(1); } 40% { transform: scale(1.45); } 70% { transform: scale(0.9); } 100% { transform: scale(1); } }
-  .card-img { aspect-ratio: 1 / 1; overflow: hidden; background: #f5f5f3; display: flex; align-items: center; justify-content: center; }
-  .card-img img { width: 72%; height: 72%; object-fit: contain; transition: transform .4s ease; }
+  @keyframes heartpop {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(1.45); }
+    70%  { transform: scale(0.9); }
+    100% { transform: scale(1); }
+  }
+
+  .card-img {
+    aspect-ratio: 1 / 1; overflow: hidden;
+    background: #f5f5f3;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .card-img img {
+    width: 72%; height: 72%; object-fit: contain;
+    transition: transform .4s ease;
+  }
   .card:hover .card-img img { transform: scale(1.04); }
-  .card-body { padding: 14px 16px 18px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
-  .card-cat { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-muted); }
+
+  .card-body {
+    padding: 14px 16px 18px;
+    display: flex; flex-direction: column; gap: 6px; flex: 1;
+  }
+  .card-cat {
+    font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--c-muted);
+  }
   .card-name { font-size: 13px; font-weight: 400; color: var(--c-text); line-height: 1.4; }
-  .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+
+  .card-footer {
+    display: flex; align-items: center;
+    justify-content: space-between; margin-top: 10px;
+  }
   .card-price { font-size: 15px; font-weight: 600; color: var(--c-text); }
-  .btn-cart { font-size: 11px; letter-spacing: 0.06em; padding: 7px 14px; border-radius: 2px; background: var(--c-btn); color: var(--c-white); border: 1px solid var(--c-btn); transition: background .2s, border-color .2s, transform .15s; white-space: nowrap; }
-  .btn-cart:hover { background: var(--c-btn-hover); border-color: var(--c-btn-hover); }
+
+  /* ── КНОПКА КОРЗИНА — коричневая ── */
+  .btn-cart {
+    font-size: 11px; letter-spacing: 0.06em;
+    padding: 7px 14px; border-radius: 2px;
+    background: var(--c-btn);
+    color: var(--c-white);
+    border: 1px solid var(--c-btn);
+    transition: background .2s, border-color .2s, transform .15s;
+    white-space: nowrap;
+  }
+  .btn-cart:hover {
+    background: var(--c-btn-hover);
+    border-color: var(--c-btn-hover);
+  }
   .btn-cart:active { transform: scale(0.96); }
-  .pagination { display: flex; justify-content: center; gap: 8px; padding: 48px 0 64px; }
-  .pg-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--c-border); font-size: 13px; color: var(--c-muted); display: flex; align-items: center; justify-content: center; transition: border-color .2s, color .2s, background .2s; background: transparent; cursor: pointer; }
+
+  /* ── PAGINATION ── */
+  .pagination {
+    display: flex; justify-content: center;
+    gap: 8px; padding: 48px 0 64px;
+  }
+  .pg-btn {
+    width: 36px; height: 36px; border-radius: 50%;
+    border: 1px solid var(--c-border);
+    font-size: 13px; color: var(--c-muted);
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color .2s, color .2s, background .2s;
+    background: transparent; cursor: pointer;
+  }
   .pg-btn:hover { border-color: var(--c-text); color: var(--c-text); }
   .pg-btn.active { background: var(--c-text); border-color: var(--c-text); color: var(--c-white); }
+
+  /* ── FOOTER ── */
   .site-footer { background: var(--c-text); color: rgba(255,255,255,.6); padding: 48px 32px 32px; }
-  .footer-inner { max-width: var(--page-w); margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.1); }
-  .footer-brand-logo { font-family: var(--f-brand); font-size: 15px; font-style: italic; color: var(--c-white); margin-bottom: 12px; line-height: 1.2; }
+  .footer-inner {
+    max-width: var(--page-w); margin: 0 auto;
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px; padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .footer-brand-logo {
+    font-family: var(--f-brand); font-size: 15px;
+    font-style: italic; color: var(--c-white);
+    margin-bottom: 12px; line-height: 1.2;
+  }
   .footer-brand-desc { font-size: 12px; line-height: 1.7; max-width: 220px; margin-bottom: 20px; }
   .footer-socials { display: flex; gap: 12px; }
-  .footer-socials a { width: 36px; height: 36px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.6); transition: border-color .2s, color .2s; }
+  .footer-socials a {
+    width: 36px; height: 36px;
+    border: 1px solid rgba(255,255,255,.2); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,.6);
+    transition: border-color .2s, color .2s;
+  }
   .footer-socials a:hover { border-color: var(--c-white); color: var(--c-white); }
   .footer-socials svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 1.5; }
-  .footer-col h4 { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-white); margin-bottom: 16px; font-weight: 600; }
+  .footer-col h4 {
+    font-size: 10px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--c-white);
+    margin-bottom: 16px; font-weight: 600;
+  }
   .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
   .footer-col a { font-size: 12px; color: rgba(255,255,255,.55); transition: color .2s; }
   .footer-col a:hover { color: var(--c-white); }
   .footer-bottom { max-width: var(--page-w); margin: 24px auto 0; font-size: 11px; color: rgba(255,255,255,.3); }
-  .mobile-nav { display: none; position: fixed; inset: 0; background: var(--c-white); z-index: 200; flex-direction: column; padding: 80px 32px 40px; gap: 24px; }
+
+  /* ── MOBILE NAV ── */
+  .mobile-nav {
+    display: none; position: fixed; inset: 0;
+    background: var(--c-white); z-index: 200;
+    flex-direction: column; padding: 80px 32px 40px; gap: 24px;
+  }
   .mobile-nav.open { display: flex; }
   .mobile-nav a { font-size: 16px; color: var(--c-text); border-bottom: 1px solid var(--c-border); padding-bottom: 16px; }
   .mobile-close { position: absolute; top: 18px; right: 24px; font-size: 28px; color: var(--c-muted); background: none; border: none; cursor: pointer; }
-  @media (max-width: 1024px) { .catalog-grid { grid-template-columns: repeat(3, 1fr); } .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; } }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .catalog-grid { grid-template-columns: repeat(3, 1fr); }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
   @media (max-width: 768px) {
     :root { --gap: 12px; }
     .nav-links, .nav-icons { display: none; }
-    .hamburger { display: flex; margin-left: auto; align-items: center; justify-content: center; padding: 8px; color: var(--c-text); }
+    .hamburger {
+      display: flex; margin-left: auto;
+      align-items: center; justify-content: center;
+      padding: 8px; color: var(--c-text);
+    }
     .hamburger svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.5; }
     .catalog-header { padding: 24px 16px 0; }
     .filters-wrap { padding: 0 16px 24px; }
@@ -95,6 +275,7 @@
     .card-body { padding: 10px 12px 14px; }
     .card-name { font-size: 12px; }
     .card-price { font-size: 13px; }
+    .btn-cart { font-size: 10px; padding: 6px 10px; }
     .card-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
     .btn-cart { width: 100%; text-align: center; padding: 9px 10px; font-size: 11px; }
     .site-footer { padding: 40px 16px 28px; }
@@ -104,31 +285,39 @@
 </style>
 </head>
 <body>
+
 <header class="site-header">
   <nav class="nav-inner">
-    <a href="#" class="nav-logo"><span>Сияние</span><span>изнутри</span></a>
+    <a href="file:///C:/Users/PC/Downloads/index_16.html#" class="nav-logo"><span>Сияние</span><span>изнутри</span></a>
     <div class="nav-links">
-      <a href="#">Каталог</a><a href="#">О нас</a><a href="#">Акции</a><a href="#">Блог</a><a href="#">Контакты</a>
+      <a href="file:///C:/Users/PC/Downloads/index_16.html#">Каталог</a>
+      <a href="file:///C:/Users/PC/Downloads/index_16.html#">О нас</a>
+      <a href="file:///C:/Users/PC/Downloads/index_16.html#">Акции</a>
+      <a href="file:///C:/Users/PC/Downloads/index_16.html#">Блог</a>
+      <a href="file:///C:/Users/PC/Downloads/index_16.html#">Контакты</a>
     </div>
     <div class="nav-icons">
-      <button aria-label="Поиск"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
-      <button aria-label="Избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-      <button aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></button>
-      <button aria-label="Профиль"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+      <button aria-label="Поиск"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></button>
+      <button aria-label="Избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+      <button aria-label="Корзина"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg></button>
+      <button aria-label="Профиль"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></button>
     </div>
-    <button class="hamburger" onclick="document.getElementById('mobileNav').classList.add('open')" aria-label="Меню">
-      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    <button class="hamburger" onclick="document.getElementById(&#39;mobileNav&#39;).classList.add(&#39;open&#39;)" aria-label="Меню">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
     </button>
   </nav>
 </header>
+
 <div class="mobile-nav" id="mobileNav">
-  <button class="mobile-close" onclick="document.getElementById('mobileNav').classList.remove('open')">×</button>
-  <a href="#">Каталог</a><a href="#">О нас</a><a href="#">Акции</a><a href="#">Блог</a><a href="#">Контакты</a>
+  <button class="mobile-close" onclick="document.getElementById(&#39;mobileNav&#39;).classList.remove(&#39;open&#39;)">×</button>
+  <a href="file:///C:/Users/PC/Downloads/index_16.html#">Каталог</a><a href="file:///C:/Users/PC/Downloads/index_16.html#">О нас</a><a href="file:///C:/Users/PC/Downloads/index_16.html#">Акции</a><a href="file:///C:/Users/PC/Downloads/index_16.html#">Блог</a><a href="file:///C:/Users/PC/Downloads/index_16.html#">Контакты</a>
 </div>
+
 <section class="catalog-header">
-  <p class="breadcrumb"><a href="#">Главная</a><span>/</span><span>Каталог</span></p>
+  <p class="breadcrumb"><a href="file:///C:/Users/PC/Downloads/index_16.html#">Главная</a><span>/</span><span>Каталог</span></p>
   <h1 class="catalog-title">Каталог</h1>
 </section>
+
 <div class="filters-wrap">
   <div class="filter-row">
     <button class="filter-btn">Акции</button>
@@ -143,43 +332,208 @@
     <button class="filter-btn">Тонизация</button>
   </div>
 </div>
+
 <main class="catalog-grid">
-  <article class="card"><div class="card-img"><img src="REVE_Hydrating_Toner.png" alt="Тоник"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за лицом</span><p class="card-name">Тоник «Зелёный лист»</p><div class="card-footer"><span class="card-price">2 490р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><span class="card-sale">%</span><div class="card-img"><img src="REVE_Body_Lotion.png" alt="Скраб"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за телом</span><p class="card-name">Скраб «Сахарный цвет»</p><div class="card-footer"><span class="card-price">2 890р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><div class="card-img"><img src="REVE_Hair_Oil.png" alt="Масло"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за волосами</span><p class="card-name">Масло «Медовая нить»</p><div class="card-footer"><span class="card-price">3 100р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><div class="card-img"><img src="REVE_Eye_Cream.png" alt="Крем"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за лицом</span><p class="card-name">Крем «SPF 50+»</p><div class="card-footer"><span class="card-price">3 800р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><span class="card-sale">%</span><div class="card-img"><img src="REVE_Shampoo.png" alt="Сыворотка"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за лицом</span><p class="card-name">Сыворотка «Утренний свет»</p><div class="card-footer"><span class="card-price">2 490р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><div class="card-img"><img src="REVE_Conditioner.png" alt="Маска"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за волосами</span><p class="card-name">Маска «Живые корни»</p><div class="card-footer"><span class="card-price">1 890р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><div class="card-img"><img src="REVE_Eye_Cream.png" alt="Масло"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за телом</span><p class="card-name">Масло «Золотой бархат»</p><div class="card-footer"><span class="card-price">3 200р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><div class="card-img"><img src="REVE_Hydrating_Toner.png" alt="Крем"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за лицом</span><p class="card-name">Крем «Ночной ритуал»</p><div class="card-footer"><span class="card-price">4 100р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><span class="card-sale">%</span><div class="card-img"><img src="REVE_Body_Lotion.png" alt="Лосьон"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за телом</span><p class="card-name">Лосьон «Зелёный чай»</p><div class="card-footer"><span class="card-price">2 490р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><span class="card-sale">%</span><div class="card-img"><img src="REVE_Hair_Oil.png" alt="Шампунь"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за волосами</span><p class="card-name">Шампунь «Блеск и сила»</p><div class="card-footer"><span class="card-price">2 000р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><span class="card-sale">%</span><div class="card-img"><img src="REVE_Shampoo.png" alt="Крем"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за лицом</span><p class="card-name">Крем «Бархатная кожа»</p><div class="card-footer"><span class="card-price">2 600р</span><button class="btn-cart">в корзину</button></div></div></article>
-  <article class="card"><span class="card-sale">%</span><div class="card-img"><img src="REVE_Conditioner.png" alt="Шампунь"></div><button class="card-wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button><div class="card-body"><span class="card-cat">уход за волосами</span><p class="card-name">Шампунь «Живые волосы»</p><div class="card-footer"><span class="card-price">4 100р</span><button class="btn-cart">в корзину</button></div></div></article>
+
+  <article class="card">
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%A3%D0%B2%D0%BB%D0%B0%D0%B6%D0%BD%D1%8F%D1%8E%D1%89%D0%B8%D0%B9%20%D1%82%D0%BE%D0%BD%D0%B8%D0%BA%20REVE%20(1).png" alt="Тоник Зелёный лист"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за лицом</span>
+      <p class="card-name">Тоник «Зелёный лист»</p>
+      <div class="card-footer">
+        <span class="card-price">2 490р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <span class="card-sale">%</span>
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%9B%D0%BE%D1%81%D1%8C%D0%BE%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B0%20REVE%20(2).png" alt="Скраб Сахарный цвет"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за телом</span>
+      <p class="card-name">Скраб «Сахарный цвет»</p>
+      <div class="card-footer">
+        <span class="card-price">2 890р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%9C%D0%B0%D1%81%D0%BB%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%20REVE%20(1).png" alt="Масло Медовая нить"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за волосами</span>
+      <p class="card-name">Масло «Медовая нить»</p>
+      <div class="card-footer">
+        <span class="card-price">3 100р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%9A%D1%80%D0%B5%D0%BC%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D0%B6%D0%B8%20%D0%B2%D0%BE%D0%BA%D1%80%D1%83%D0%B3%20%D0%B3%D0%BB%D0%B0%D0%B7%20REVE%20(2).png" alt="Крем SPF 50+"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за лицом</span>
+      <p class="card-name">Крем «SPF 50+»</p>
+      <div class="card-footer">
+        <span class="card-price">3 800р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <span class="card-sale">%</span>
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%A8%D0%B0%D0%BC%D0%BF%D1%83%D0%BD%D1%8C%20REVE%20(1).png" alt="Сыворотка Утренний свет"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за лицом</span>
+      <p class="card-name">Сыворотка «Утренний свет»</p>
+      <div class="card-footer">
+        <span class="card-price">2 490р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%9A%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%20REVE%20(1).png" alt="Маска Живые корни"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за волосами</span>
+      <p class="card-name">Маска «Живые корни»</p>
+      <div class="card-footer">
+        <span class="card-price">1 890р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%9A%D1%80%D0%B5%D0%BC%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D0%B6%D0%B8%20%D0%B2%D0%BE%D0%BA%D1%80%D1%83%D0%B3%20%D0%B3%D0%BB%D0%B0%D0%B7%20REVE%20(2).png" alt="Масло Золотой бархат"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за телом</span>
+      <p class="card-name">Масло «Золотой бархат»</p>
+      <div class="card-footer">
+        <span class="card-price">3 200р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%A3%D0%B2%D0%BB%D0%B0%D0%B6%D0%BD%D1%8F%D1%8E%D1%89%D0%B8%D0%B9%20%D1%82%D0%BE%D0%BD%D0%B8%D0%BA%20REVE%20(1).png" alt="Крем Ночной ритуал"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за лицом</span>
+      <p class="card-name">Крем «Ночной ритуал»</p>
+      <div class="card-footer">
+        <span class="card-price">4 100р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <span class="card-sale">%</span>
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%9B%D0%BE%D1%81%D1%8C%D0%BE%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B0%20REVE%20(2).png" alt="Лосьон Зелёный чай"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за телом</span>
+      <p class="card-name">Лосьон «Зелёный чай»</p>
+      <div class="card-footer">
+        <span class="card-price">2 490р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <span class="card-sale">%</span>
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%9C%D0%B0%D1%81%D0%BB%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%20REVE%20(1).png" alt="Шампунь Блеск и сила"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за волосами</span>
+      <p class="card-name">Шампунь «Блеск и сила»</p>
+      <div class="card-footer">
+        <span class="card-price">2 000р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <span class="card-sale">%</span>
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%A8%D0%B0%D0%BC%D0%BF%D1%83%D0%BD%D1%8C%20REVE%20(1).png" alt="Крем Бархатная кожа"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за лицом</span>
+      <p class="card-name">Крем «Бархатная кожа»</p>
+      <div class="card-footer">
+        <span class="card-price">2 600р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <span class="card-sale">%</span>
+    <div class="card-img"><img src="file:///C:/Users/PC/Downloads/%D0%9A%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%20REVE%20(1).png" alt="Шампунь Живые волосы"></div>
+    <button class="card-wish" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+    <div class="card-body">
+      <span class="card-cat">уход за волосами</span>
+      <p class="card-name">Шампунь «Живые волосы»</p>
+      <div class="card-footer">
+        <span class="card-price">4 100р</span>
+        <button class="btn-cart">в корзину</button>
+      </div>
+    </div>
+  </article>
+
 </main>
+
 <nav class="pagination">
   <button class="pg-btn active">1</button>
   <button class="pg-btn">2</button>
   <button class="pg-btn">3</button>
   <button class="pg-btn">4</button>
 </nav>
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div>
       <p class="footer-brand-logo">Сияние<br>изнутри</p>
       <p class="footer-brand-desc">Истинная красота начинается со здоровья. Мы создаём косметику, которая работает изнутри</p>
       <div class="footer-socials">
-        <a href="#"><svg viewBox="0 0 24 24"><path d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.5-3"/></svg></a>
-        <a href="#"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="file:///C:/Users/PC/Downloads/index_16.html#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.5-3"></path></svg></a>
+        <a href="file:///C:/Users/PC/Downloads/index_16.html#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
       </div>
     </div>
-    <div class="footer-col"><h4>Компания</h4><ul><li><a href="#">О нас</a></li><li><a href="#">Вакансии</a></li><li><a href="#">Контакты</a></li><li><a href="#">Пресса</a></li></ul></div>
-    <div class="footer-col"><h4>Помощь</h4><ul><li><a href="#">Доставка и оплата</a></li><li><a href="#">Возврат</a></li><li><a href="#">FAQ</a></li><li><a href="#">Бонусная программа</a></li></ul></div>
-    <div class="footer-col"><h4>Политика</h4><ul><li><a href="#">Конфиденциальность</a></li><li><a href="#">Пользовательское соглашение</a></li><li><a href="#">Оферта</a></li></ul></div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <ul><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">О нас</a></li><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Вакансии</a></li><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Контакты</a></li><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Пресса</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Помощь</h4>
+      <ul><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Доставка и оплата</a></li><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Возврат</a></li><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">FAQ</a></li><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Бонусная программа</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Политика</h4>
+      <ul><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Конфиденциальность</a></li><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Пользовательское соглашение</a></li><li><a href="file:///C:/Users/PC/Downloads/index_16.html#">Оферта</a></li></ul>
+    </div>
   </div>
   <p class="footer-bottom">© 2025 Сияние изнутри. Все права защищены</p>
 </footer>
+
 <script>
+  // Фильтры
   document.querySelectorAll('.filter-row').forEach(row => {
     row.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -188,14 +542,24 @@
       });
     });
   });
+
+  // Сердечко — анимация + toggle
   document.querySelectorAll('.card-wish').forEach(btn => {
     btn.addEventListener('click', () => {
       btn.classList.toggle('liked');
       btn.classList.remove('pop');
-      requestAnimationFrame(() => { requestAnimationFrame(() => { btn.classList.add('pop'); }); });
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          btn.classList.add('pop');
+        });
+      });
     });
-    btn.addEventListener('animationend', () => { btn.classList.remove('pop'); });
+    btn.addEventListener('animationend', () => {
+      btn.classList.remove('pop');
+    });
   });
+
+  // Пагинация
   document.querySelectorAll('.pg-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.pg-btn').forEach(b => b.classList.remove('active'));
@@ -203,5 +567,6 @@
     });
   });
 </script>
-</body>
-</html>
+
+
+</body></html>
